@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/styles.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <button class="sidebar__btn" data-target="home">
+        <i class="bx bx-home"></i><span>Home</span>
+      </button>
+      <button class="sidebar__btn" data-target="about">
+        <i class="bx bx-user"></i><span>About</span>
+      </button>
+      <button class="sidebar__btn" data-target="work">
+        <i class="bx bx-briefcase"></i><span>Work</span>
+      </button>
+      <button class="sidebar__btn" data-target="contact">
+        <i class="bx bx-envelope"></i><span>Contact</span>
+      </button>
+      <button class="sidebar__btn" data-target="settings">
+        <i class="bx bx-cog"></i><span>Settings</span>
+      </button>
+    </div>
+    <div class="mobile-menu__button">
+      <h3 class="mobile-menu__title">Home</h3>
+      <label class="burger">
+        <input type="checkbox" />
+        <div class="checkmark">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </label>
+    </div>
+    <div class="mobile-menu">
+      <div class="mobile-menu__content">
+        <nav class="mobile-menu__nav">
+          <button class="mobile-menu__nav-btn" data-target="home">
+            <i class="bx bx-home"></i><span>Home</span>
+          </button>
+          <button class="mobile-menu__nav-btn" data-target="about">
+            <i class="bx bx-user"></i><span>About</span>
+          </button>
+          <button class="mobile-menu__nav-btn" data-target="work">
+            <i class="bx bx-briefcase"></i><span>Work</span>
+          </button>
+          <button class="mobile-menu__nav-btn" data-target="contact">
+            <i class="bx bx-envelope"></i><span>Contact</span>
+          </button>
+          <button class="mobile-menu__nav-btn" data-target="settings">
+            <i class="bx bx-cog"></i><span>Settings</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero" id="home">
+      <div class="hero__background"></div>
+      <div class="hero__photo"></div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <img
+            src="Pictures/circled-photo-min.png"
+            class="hero__responsive-img"
+          />
+          <span class="hero__content--greeting">hi there !</span>
+          <h1 class="hero__title mb-1 mt-1">
+            <span class="text-marker">i'm ben davidian.</span><br />cs student
+          </h1>
+          <p class="hero__description">
+            I’m an Israeli based dedicated Computer Science student at Bar-Ilan
+            University. Welcome to my portfolio where you can explore my
+            projects and learn more about my journey.
+          </p>
+          <button class="btn hero__btn">more about me</button>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container about__container">
+        <div class="about__content">
+          <h2 class="about__title">
+            about<span class="text-marker"> me</span>
+          </h2>
+          <div class="about__info-blocks">
+            <div class="about__info-block about__info-block--left">
+              <h3 class="about__subtitle">Personal Information</h3>
+              <h3 class="about__subtitle--responsive">Personal Infos</h3>
+              <img
+                src="Pictures/circled-photo-min.png"
+                class="about__img--responsive"
+              />
+              <div class="about__fields">
+                <p class="about__field">
+                  <span>First Name: </span><span>Ben</span>
+                </p>
+                <p class="about__field">
+                  <span>Last Name: </span><span>Davidian</span>
+                </p>
+                <p class="about__field">
+                  <span>Age: </span><span>26 Years Old</span>
+                </p>
+                <p class="about__field">
+                  <span>Nationality: </span><span>Israel</span>
+                </p>
+                <p class="about__field">
+                  <span>University: </span><span>Bar Ilan</span>
+                </p>
+                <p class="about__field">
+                  <span>Address: </span><span>Tel Mond</span>
+                </p>
+                <p class="about__field">
+                  <span>Phone: </span><span>+972523456789</span>
+                </p>
+                <p class="about__field">
+                  <span>Email: </span><span>bendavidian@example.com</span>
+                </p>
+                <p class="about__field">
+                  <span>Github: </span><span>bendavidian</span>
+                </p>
+                <p class="about__field">
+                  <span>Languages: </span><span>Hebrew, English</span>
+                </p>
+              </div>
+              <button class="btn about__btn">Download CV</button>
+            </div>
+            <div class="about__info-block about__info-block--right">
+              <div class="about__cards">
+                <div class="about__card">
+                  <h4 class="about__card-title">1</h4>
+                  <p class="about__card-description">years of experience</p>
+                </div>
+                <div class="about__card">
+                  <h4 class="about__card-title">1</h4>
+                  <p class="about__card-description">years of experience</p>
+                </div>
+                <div class="about__card">
+                  <h4 class="about__card-title">1</h4>
+                  <p class="about__card-description">years of experience</p>
+                </div>
+                <div class="about__card">
+                  <h4 class="about__card-title">1</h4>
+                  <p class="about__card-description">years of experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="about__skills-block">
+            <h3 class="about__subtitle about__subtitle--2 mb-2">My Skills</h3>
+            <div class="about__progress-bars">
+              <div class="about__progress-item">
+                <div
+                  class="about__progress-circle"
+                  style="--percent: 25"
+                  data-percent="25"
+                ></div>
+                <span class="about__progress-label">HTML</span>
+              </div>
+              <div class="about__progress-item">
+                <div
+                  class="about__progress-circle"
+                  style="--percent: 89"
+                  data-percent="89"
+                ></div>
+                <span class="about__progress-label">CSS</span>
+              </div>
+              <div class="about__progress-item">
+                <div
+                  class="about__progress-circle"
+                  style="--percent: 70"
+                  data-percent="70"
+                ></div>
+                <span class="about__progress-label">JavaScript</span>
+              </div>
+              <div class="about__progress-item">
+                <div
+                  class="about__progress-circle"
+                  style="--percent: 66"
+                  data-percent="66"
+                ></div>
+                <span class="about__progress-label">React</span>
+              </div>
+              <div class="about__progress-item">
+                <div
+                  class="about__progress-circle"
+                  style="--percent: 95"
+                  data-percent="95"
+                ></div>
+                <span class="about__progress-label">Node.js</span>
+              </div>
+              <div class="about__progress-item">
+                <div
+                  class="about__progress-circle"
+                  style="--percent: 50"
+                  data-percent="50"
+                ></div>
+                <span class="about__progress-label">Python</span>
+              </div>
+              <div class="about__progress-item">
+                <div
+                  class="about__progress-circle"
+                  style="--percent: 65"
+                  data-percent="65"
+                ></div>
+                <span class="about__progress-label">Django</span>
+              </div>
+              <div class="about__progress-item">
+                <div
+                  class="about__progress-circle"
+                  style="--percent: 45"
+                  data-percent="45"
+                ></div>
+                <span class="about__progress-label">SQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="spacer"></div>
+          <div class="about__experience">
+            <h3 class="about__subtitle about__subtitle--3 mb-2">
+              Experience & Education
+            </h3>
+            <div class="about__experience-cards">
+              <div class="about__experience-card">
+                <div class="about__experience-card-year">2022 - Present</div>
+                <div class="about__experience-card-content">
+                  <h4 class="about__experience-card-title">
+                    Software Engineer <i class="bx bx-minus"></i>
+                    <span>ENVATO</span>
+                  </h4>
+                  <p class="about__experience-card-description">
+                    Developing web applications using modern frameworks and
+                    technologies.
+                  </p>
+                </div>
+                <div class="about__experience-card-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+              </div>
+              <div class="about__experience-card">
+                <div class="about__experience-card-year">2022 - Present</div>
+                <div class="about__experience-card-content">
+                  <h4 class="about__experience-card-title">
+                    Software Engineer <i class="bx bx-minus"></i>
+                    <span>ENVATO</span>
+                  </h4>
+                  <p class="about__experience-card-description">
+                    Developing web applications using modern frameworks and
+                    technologies.
+                  </p>
+                </div>
+                <div class="about__experience-card-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+              </div>
+              <div class="about__experience-card">
+                <div class="about__experience-card-year">2022 - Present</div>
+                <div class="about__experience-card-content">
+                  <h4 class="about__experience-card-title">
+                    Software Engineer <i class="bx bx-minus"></i>
+                    <span>ENVATO</span>
+                  </h4>
+                  <p class="about__experience-card-description">
+                    Developing web applications using modern frameworks and
+                    technologies.
+                  </p>
+                </div>
+                <div class="about__experience-card-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+              </div>
+              <div class="about__experience-card">
+                <div class="about__experience-card-year">2022 - Present</div>
+                <div class="about__experience-card-content">
+                  <h4 class="about__experience-card-title">
+                    Software Engineer <i class="bx bx-minus"></i>
+                    <span>ENVATO</span>
+                  </h4>
+                  <p class="about__experience-card-description">
+                    Developing web applications using modern frameworks and
+                    technologies.
+                  </p>
+                </div>
+                <div class="about__experience-card-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+              </div>
+              <div class="about__experience-card">
+                <div class="about__experience-card-year">2022 - Present</div>
+                <div class="about__experience-card-content">
+                  <h4 class="about__experience-card-title">
+                    Software Engineer
+                    <i class="bx bx-minus"></i>
+                    <span>ENVATO</span>
+                  </h4>
+                  <p class="about__experience-card-description">
+                    Developing web applications using modern frameworks and
+                    technologies.
+                  </p>
+                </div>
+                <div class="about__experience-card-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+              </div>
+              <div class="about__experience-card">
+                <div class="about__experience-card-year">2022 - Present</div>
+                <div class="about__experience-card-content">
+                  <h4 class="about__experience-card-title">
+                    Software Engineer <i class="bx bx-minus"></i>
+                    <span>ENVATO</span>
+                  </h4>
+                  <p class="about__experience-card-description">
+                    Developing web applications using modern frameworks and
+                    technologies.
+                  </p>
+                </div>
+                <div class="about__experience-card-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container contact__container">
+        <div class="contact__content">
+          <h2 class="contact__title">
+            get in<span class="text-marker"> touch</span>
+          </h2>
+          <div class="contact__blocks">
+            <div class="contact__blocks-left">
+              <h3>don't be shy !</h3>
+              <p>
+                Feel free to get in touch with me. I am always open to
+                discussing new projects, creative ideas or opportunities to be
+                part of your visions.
+              </p>
+              <div class="contact__item">
+                <i class="bx bxs-envelope-open"></i>
+                <div class="contact__item-title">mail me</div>
+                <div class="contact__item-description">ben@mail.com</div>
+              </div>
+              <div class="contact__item">
+                <i class="bx bxs-phone"></i>
+                <div class="contact__item-title">call me</div>
+                <div class="contact__item-description">+972 55 555 5555</div>
+              </div>
+              <div class="contact__social">
+                <i class="bx bxl-facebook"></i><i class="bx bxl-github"></i
+                ><i class="bx bxl-twitter"></i><i class="bx bxl-instagram"></i>
+              </div>
+            </div>
+            <div class="contact__blocks-right">
+              <form action="" class="contact__form">
+                <input type="text" class="name" placeholder="your name" />
+                <input type="text" class="email" placeholder="your email" />
+                <input type="text" class="subject" placeholder="your subject" />
+                <textarea name="" id="" placeholder="your message"></textarea>
+                <button class="btn">send message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

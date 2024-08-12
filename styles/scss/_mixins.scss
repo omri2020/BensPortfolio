@@ -1,0 +1,45 @@
+// src/scss/_mixins.scss
+@mixin responsive-text($size) {
+  font-size: $size;
+  @media (max-width: 1200px) {
+    font-size: $size * 0.9;
+  }
+  @media (max-width: 992px) {
+    font-size: $size * 0.8;
+  }
+  @media (max-width: 768px) {
+    font-size: $size * 0.7;
+  }
+  @media (max-width: 576px) {
+    font-size: $size * 0.6;
+  }
+}
+
+@mixin responsive-margin($property, $value) {
+  #{$property}: $value;
+
+  @media (max-width: 1200px) {
+    #{$property}: $value * 0.9;
+  }
+  @media (max-width: 992px) {
+    #{$property}: $value * 0.8;
+  }
+  @media (max-width: 768px) {
+    #{$property}: $value * 0.7;
+  }
+  @media (max-width: 576px) {
+    #{$property}: $value * 0.6;
+  }
+}
+
+@mixin placeholder {
+  &::placeholder {
+    text-transform: uppercase;
+  }
+}
+
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

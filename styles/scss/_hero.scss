@@ -1,0 +1,146 @@
+// src/scss/_hero.scss
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: left;
+
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+
+  @media (max-width: 578px) {
+    text-align: left;
+  }
+
+  &__background {
+    position: fixed;
+    top: -50%;
+    left: -83%;
+    width: 100%;
+    height: 200%;
+    background: rgba(252, 252, 252, 0.25);
+    transform: rotate(-15deg);
+    z-index: -1;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__photo {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 33.333333%;
+    height: calc(100vh - 60px);
+    border-radius: 30px;
+    background: url("../../Pictures/Hero photo.png") top no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 0 120px;
+
+    @media (max-width: 991px) {
+      justify-content: center;
+      align-items: center;
+      padding: 0 60px;
+    }
+  }
+
+  &__content {
+    max-width: 50%;
+
+    @media (max-width: 991px) {
+      max-width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 576px) {
+      align-items: start;
+    }
+
+    &--greeting {
+      font-size: 18px;
+      text-transform: uppercase;
+
+      @media (max-width: 991px) {
+        display: none;
+      }
+
+      @media (max-width: 578px) {
+        display: block;
+      }
+    }
+  }
+
+  &__responsive-img {
+    display: none;
+    height: 250px;
+    width: 250px;
+    background: url("../../Pictures/Hero photo.png") no-repeat;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+
+    @media (max-width: 991px) {
+      display: block;
+    }
+
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    @include responsive-text(50px);
+    & {
+      font-family: $font-primary;
+      font-weight: 600;
+      color: $color-white;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 25%;
+      left: -8%;
+      height: 1px;
+      width: 30px;
+      background: $color-marker;
+    }
+    @media (max-width: 991px) {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__description {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: $color-secondary;
+  }
+}
